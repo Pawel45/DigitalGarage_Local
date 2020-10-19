@@ -28,7 +28,7 @@
     <!-- END -->
 
 
-    <v-toolbar class="primary">
+    <v-toolbar class="primary toolbar">
 
       <!-- Hamburger menu for small devices -->
       <v-app-bar-nav-icon 
@@ -76,6 +76,11 @@ export default {
 <style lang="scss" scoped>
 
 @import "assets/variables.scss";
+  @media only screen and (min-width: 1264px) {
+  .toolbar {
+    padding: 0 13% !important;
+  }
+}
 
   .primary{
     background-color: $primary !important;
